@@ -23,29 +23,21 @@
 
 <br>
 
-**ABOUT**
+## **ABOUT**
 
-* The application should have user authentication. A user should be able to log in and log out. 
-* Only logged in users should have create, update and delete functionality. 
-* All users should be able to have read functionality.
-* There should be a many-to-many relationship between Treats and Flavors. 
+* The application has user authentication. A user is able to log in and log out. 
+* Only logged in users have create, update and delete functionality. 
+* All users are able to have read functionality.
+* There is a many-to-many relationship between Treats and Flavors. 
 * A treat can have many flavors (such as sweet, savory, spicy, or creamy) and a flavor can have many treats. 
-For instance, the "sweet" flavor could include chocolate croissants, cheesecake, and so on.
-* A user should be able to navigate to a splash page that lists all treats and flavors. 
-* Users should be able to click on an individual treat or flavor to see all the treats/flavors that belong to it.
+* A user is able to navigate to a splash page that lists all treats and flavors. 
+* Users are able to click on an individual treat or flavor to see all the treats/flavors that belong to it.
+* All classes have all CRUD methods implemented.
+* You are able to view both sides of the many-many relationship.
+* For a particular instance of a class, you are able to view all of the instances of the other class that are related to it.
+* Users are able to register, log in and log out with Identity.
+* Create, Update and Delete functionality are limited to authenticated user.
 
-
-* Does at least one of your classes have all CRUD methods implemented in your app?
-* Are you able to view both sides of the many-many relationship? For a particular instance of a class, are you able to view all of the instances of the other class that are related to it?
-* Are users able to register, log in and log out with Identity?
-* Is Create, Update and Delete functionality limited to authenticated users?
-* Is the project in a polished, portfolio-quality state?
-* Was required functionality in place by the 5:00pm Friday deadline?
-* Does the project demonstrate all of this week's concepts? If prompted, are you able to discuss your code with an instructor using correct terminology?
-
-* Have separate roles for admins and logged-in users. Only admins should be able to add, update and delete.
-Add an order form that only logged-in users can access. 
-* A logged-in user should be able to create, read, update and delete their own order.
 
 ## **REQUIREMENTS** 
 
@@ -53,6 +45,80 @@ Add an order form that only logged-in users can access.
 * Install [.NET version 3.1 SDK v2.2+](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * Install [Visual Studio Code](https://code.visualstudio.com/)
 * Install [MySql Workbench](https://www.mysql.com/products/workbench/)
+
+<br>
+
+## **PROTECTING YOUR DATA** 
+(when modifying for personal use)
+
+#### **Step 1: From within VSCode in the root project directory, we will create a .gitignore file**
+
+# For ![l-top](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)
+```js 
+touch .gitignore 
+```
+
+# For ![l-top](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)
+
+```js 
+ni .gitignore 
+```
+
+#### Step 2: commit that .gitignore file (this prevents your sensitive information from being shown to others). **⚠️DO NOT PROCEED UNTIL YOU DO!⚠️**
+
+![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/entity-readme-image.png "Set up instructions")
+
+#### Step 3: **To commit your .gitignore file enter the following commands**
+
+```js
+git add .gitignore
+```
+```js
+git commit -m "protect data"
+```
+
+#### Step 4: **Then, you need to update your username and password in the appsettings.json file.**
+
+_by default these are set to user:root and an empty password. if you are unsure, refer to the settings for your MySqlWorkbench._
+
+![appsettings](https://coding-assets.s3-us-west-2.amazonaws.com/img/app-settings.png)
+
+## **SETUP**
+
+copy this url to clone this project to your local system:
+```html
+https://github.com/tmemmerson/Factory.Solution.git
+```
+
+<br>
+
+Once copied, select "Clone Repository" from within VSCode & paste the copied link as shown in the image below.
+
+![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone-github2.gif "Cloning from Github within VSCode")
+
+<br>
+
+With the project open to the root directory, navigate to the production directory with the following commands in your terminal.
+```js 
+cd Factory
+```
+
+```js 
+dotnet restore 
+```
+
+```js 
+dotnet build 
+``` 
+
+```js 
+dotnet ef database update 
+``` 
+
+Your application is now built, as well as the requisite database for this application. Now we run the program with...
+```js 
+dotnet run 
+``` 
 
 <br>
 
