@@ -13,20 +13,20 @@ using System.Security.Claims;
 
 namespace Pierre.Controllers
 {
-  [Authorize] //new line
+  [Authorize]
   public class TreatsController : Controller
   {
     private readonly PierreContext _db;
-    private readonly UserManager<ApplicationUser> _userManager; //new line
+    private readonly UserManager<ApplicationUser> _userManager; 
 
-    //updated constructor
+    
     public TreatsController(UserManager<ApplicationUser> userManager, PierreContext db)
     {
       _userManager = userManager;
       _db = db;
     }
 
-    //updated Index method
+    
     public async Task<ActionResult> Index()
     {
       var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -41,7 +41,7 @@ namespace Pierre.Controllers
       return View();
     }
 
-    //updated Create post method
+    
     [HttpPost]
     public async Task<ActionResult> Create(Treat treat, int FlavorId)
     {
