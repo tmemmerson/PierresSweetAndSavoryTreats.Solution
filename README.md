@@ -1,11 +1,11 @@
 
 
-**<h1 align = "center">The Library**
+**<h1 align = "center">Pierre's Sweet & Savory Treats**
 
-*<h2 align ="center">we'll only ruin your credit if you don't bring back the books*
+*<h2 align ="center">sweets and treats*
 
 <h1 align="center">
-  <img width="900" height="450" src="https://coding-assets.s3-us-west-2.amazonaws.com/hero_images/libary.solution.jpg">
+  <img width="900" height="450" src="https://coding-assets.s3-us-west-2.amazonaws.com/pierressweetandsavorytreats.jpg">
 
 </h1>
      
@@ -13,8 +13,8 @@
 
 <h4 align = "center">
   <a href="#requirements">Requirements</a> •
-<!--  <a href="#setup">Setup</a> • -->
-<!--   <a href="#protecting-your-data">Protecting Data</a> • -->
+  <a href="#setup">Setup</a> •
+  <a href="#protecting-your-data">Protecting Data</a> 
   <a href="#questions-and-concerns">Q's & C's</a> •
   <a href="#technologies-used">Technologies</a> •
   <a href="#known-bugs">Known Bugs</a> •  
@@ -25,21 +25,27 @@
 
 **ABOUT**
 
-* As a librarian, I want to create, read, update, delete, and list books in the catalog.
+* The application should have user authentication. A user should be able to log in and log out. 
+* Only logged in users should have create, update and delete functionality. 
+* All users should be able to have read functionality.
+* There should be a many-to-many relationship between Treats and Flavors. 
+* A treat can have many flavors (such as sweet, savory, spicy, or creamy) and a flavor can have many treats. 
+For instance, the "sweet" flavor could include chocolate croissants, cheesecake, and so on.
+* A user should be able to navigate to a splash page that lists all treats and flavors. 
+* Users should be able to click on an individual treat or flavor to see all the treats/flavors that belong to it.
 
-* As a librarian, I want to search for a book by author or title.
 
-* As a librarian, I want to enter multiple authors for a book.
+* Does at least one of your classes have all CRUD methods implemented in your app?
+* Are you able to view both sides of the many-many relationship? For a particular instance of a class, are you able to view all of the instances of the other class that are related to it?
+* Are users able to register, log in and log out with Identity?
+* Is Create, Update and Delete functionality limited to authenticated users?
+* Is the project in a polished, portfolio-quality state?
+* Was required functionality in place by the 5:00pm Friday deadline?
+* Does the project demonstrate all of this week's concepts? If prompted, are you able to discuss your code with an instructor using correct terminology?
 
-* As a patron, I want to check a book out.
-
-* As a patron, I want to know how many copies of a book are on the shelf, so that I can see if any are available. 
-
-* As a patron, I want to see a history of all the books I checked out.
-
-* As a patron, I want to know when a book I checked out is due.
-
-* As a librarian, I want to see a list of overdue books.
+* Have separate roles for admins and logged-in users. Only admins should be able to add, update and delete.
+Add an order form that only logged-in users can access. 
+* A logged-in user should be able to create, read, update and delete their own order.
 
 ## **REQUIREMENTS** 
 
@@ -54,9 +60,6 @@
 
 _Questions, comments and concerns can be directed to the authors_
 
-* [Deryck Jackson](https://www.linkedin.com/in/deryckjackson/)
-* [Hannah Beinstein](https://www.linkedin.com/in/hannahbeinstein/)
-* [Beverly Potts](https://www.linkedin.com/in/beverlypotts/)
 * [Tristan Emmerson](https://www.linkedin.com/in/tristan-emmerson/)
 
 <br>
@@ -80,9 +83,8 @@ _**None as of:** 8/11/2020_
 
 ## **CONTRIBUTORS**
 
-| [<img src="https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/hannah-beinstein.jpg" width="160px;"/><br /><sub><b>Hannah Beinstein</b></sub>](https://www.linkedin.com/in/hannahbeinstein/)<br />        | [<img src="https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/deryck-jackson.jpg" width="160px;"/><br /><sub><b>Deryck Jackson</b></sub>](https://www.linkedin.com/in/deryckjackson/)<br /> | [<img src="https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/beverly-potts.jpg" width="160px;"/><br /><sub><b>Beverly Potts</b></sub>](https://www.linkedin.com/in/beverlypotts/)<br />          | [<img src="https://coding-assets.s3-us-west-2.amazonaws.com/img/tristan_emmerson.jpg" width="160px;"/><br /><sub><b>Tristan Emmerson</b></sub>](https://www.linkedin.com/in/tristan-emmerson/)<br /> |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
+| [<img src="https://coding-assets.s3-us-west-2.amazonaws.com/img/tristan_emmerson.jpg" width="160px;"/><br /><sub><b>Tristan Emmerson</b></sub>](https://www.linkedin.com/in/tristan-emmerson/)<br /> |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 <br>
 
 ## **LICENSE**
