@@ -13,3 +13,6 @@ Is Create, Update and Delete functionality limited to authenticated users?
 Is the project in a polished, portfolio-quality state?
 Was required functionality in place by the 5:00pm Friday deadline?
 Does the project demonstrate all of this week's concepts? If prompted, are you able to discuss your code with an instructor using correct terminology?
+
+Have separate roles for admins and logged-in users. Only admins should be able to add, update and delete.
+Add an order form that only logged-in users can access. A logged-in user should be able to create, read, update and delete their own order.
