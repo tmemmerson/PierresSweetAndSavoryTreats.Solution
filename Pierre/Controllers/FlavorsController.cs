@@ -3,9 +3,14 @@ using Pierre.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace Pierre.Controllers
 {
+  
   public class FlavorsController : Controller
   {
     private readonly PierreContext _db;
@@ -20,7 +25,7 @@ namespace Pierre.Controllers
       List<Flavor> model = _db.Flavors.ToList();
       return View(model);
     }
-
+    [Authorize]
     public ActionResult Create()
     {
       return View();
@@ -42,7 +47,7 @@ namespace Pierre.Controllers
           .FirstOrDefault(flavor => flavor.FlavorId == id);
       return View(thisFlavor);
     }
-
+    [Authorize]
     public ActionResult Edit(int id)
     {
       var thisFlavor = _db.Flavors.FirstOrDefault(flavor => flavor.FlavorId == id);
@@ -56,7 +61,7 @@ namespace Pierre.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-
+    [Authorize]
     public ActionResult Delete(int id)
     {
       var thisFlavor = _db.Flavors.FirstOrDefault(flavor => flavor.FlavorId == id);
