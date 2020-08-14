@@ -143,7 +143,7 @@ _**Database Mgmt:** [MySql Workbench](https://www.mysql.com/products/workbench/)
 
 ## **KNOWN BUGS**
 
-_**None as of:** 8/11/2020_
+_**None as of:** 8/14/2020_
 
 <br>
 
